@@ -1,0 +1,109 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 2em auto;
+  padding: 1em;
+  border: 5px solid brown;
+  color: brown;
+}
+.details-button {
+  color: beige;
+  background-color: brown;
+  border: none;
+  margin: 0.5em;
+  padding: 1em;
+}
+.details-button:hover {
+  color: brown;
+  background-color: beige;
+  border: 2px solid brown;
+  cursor: pointer;
+}
+.movie-image {
+  width: 80%;
+}
+
+.movie-plot {
+  padding: 1em;
+}
+.form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-area {
+  margin: 1em;
+  border: none;
+  border-bottom: 2px solid brown;
+  outline: none;
+  color: brown;
+}
+.select-area {
+  color: brown;
+  margin: 1em;
+}
+
+.submit-button {
+  color: beige;
+  background-color: brown;
+  outline: none;
+  border: none;
+  padding: 1em;
+}
+.submit-button:hover {
+  color: brown;
+  background-color: beige;
+  cursor: pointer;
+  border: 2px solid brown;
+}
+.index-msg {
+  color: brown;
+  text-align: center;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: brown;
+}
+.remove-button {
+  border: none;
+  color: brown;
+}
+.remove-button:hover {
+  cursor: pointer;
+  border: 1px solid brown;
+}
+
+.loading {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:15%;
+  width: 2em;
+  height: 2em;
+  border: 0.5em solid rgba(165, 42, 42, 0.3);
+  border-radius: 50%;
+  border-top-color: rgba(165, 42, 42);
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
