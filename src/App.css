@@ -107,3 +107,10 @@
     -webkit-transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 600px){
+ .movie-card{
+  width:80%;
+
+}
+}
