@@ -33,13 +33,13 @@ const Search = ({ fetchMovies }) => {
           onChange={e=>{setYear(e.target.value)}}
          />
         <select
+          name="Plot"
           className="select-area"
           defaultValue={plotValue}
           onChange={e => {
             setPlotValue(e.target.value);
           }}
         >
-          <option value="">Plot</option>
           <option value="&plot=full">Full</option>
           <option value="">Short</option>
         </select>
