@@ -3,12 +3,13 @@ import React, { useState } from "react";
 const Search = ({ fetchMovies }) => {
   const [value, setValue] = useState("");
   const [plotValue, setPlotValue] = useState("");
+  const [year, setYear] = useState("")
   const submit = e => {
     if (value === "undefined" || value.trim() === "") {
       return alert("Please type a valid input");
     } else {
       e.preventDefault();
-      fetchMovies(value, plotValue);
+      fetchMovies(value, plotValue, year);
       setValue(" ");
     }
   };
@@ -25,6 +26,12 @@ const Search = ({ fetchMovies }) => {
             setValue(e.target.value);
           }}
         />
+        <input 
+          placeholder="Year"
+          className="input-area"
+          value={year}
+          onChange={e=>{setYear(e.target.value)}}
+         />
         <select
           className="select-area"
           defaultValue={plotValue}

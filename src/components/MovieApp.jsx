@@ -11,9 +11,9 @@ const MovieApp = () => {
   const [indexMessage, setIndexMessage] = useState("Welcome To Movies App");
   const [selectedMovie, setSelectedMovie] = useState([]);
 
-  function fetchMovies(title, plot) {
+  function fetchMovies(title, plot, year) {
     setLoading(true);
-    fetch(`https://www.omdbapi.com/?t=${title}&apikey=90c8ee2f${plot}`)
+    fetch(`https://www.omdbapi.com/?apikey=90c8ee2f&t=${title}&${year}&${plot}`)
       .then(res => res.json())
       .then(data => {
         setLoading(false);
