@@ -13,7 +13,7 @@ const MovieApp = () => {
 
   function fetchMovies(title, plot, year) {
     setLoading(true);
-    fetch(`https://www.omdbapi.com/?apikey=90c8ee2f&t=${title}&${year}&${plot}`)
+    fetch(`https://www.omdbapi.com/?apikey=90c8ee2f&t=${title}&y=${year}&${plot}`)
       .then(res => res.json())
       .then(data => {
         setLoading(false);
