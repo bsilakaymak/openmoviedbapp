@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 const Details = ({ movie }) => {
   const history = useHistory();
-  const back = () => history.goBack();
+  const back = () => history.push("/");
   return (
     <div className="details">
       <h3>Details</h3>
